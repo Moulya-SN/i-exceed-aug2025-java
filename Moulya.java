@@ -9,7 +9,8 @@ public class Moulya {
 
         // Character type
         char cx = 'A';
-
+        // String type
+        String name= "Moulya";
         // Boolean type
         boolean boolTrue = true;
         boolean boolFalse = false;
@@ -19,8 +20,10 @@ public class Moulya {
         System.out.println("Int: " + ix);
         System.out.println("Float: " + fx);
         System.out.println("Double: " + dx);
-        System.out.println("Char: " + c);
+        System.out.println("Char: " + cx);
         System.out.println("Boolean (true): " + boolTrue);
         System.out.println("Boolean (false): " + boolFalse);
+        System.out.println("String(Name): " + name);
     }
 }
+
