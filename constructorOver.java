@@ -1,32 +1,23 @@
-public class Person {
+public class ConstructOver {
     String name;
     int age;
-    public Person() {
-        this.name = "Unknown";
-        this.age = 0;
+    ConstructOver() {
+        System.out.println("Default constructor called");
     }
-    public Person(String name) {
-        this.name = name;
-        this.age = 0;
+    ConstructOver(String n) {
+        name = n;
+        System.out.println("Name: " + name);
     }
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public void displayInfo() {
+    ConstructOver(String n, int a) {
+        name = n;
+        age = a;
         System.out.println("Name: " + name + ", Age: " + age);
     }
 
     public static void main(String[] args) {
-        Person p1 = new Person();
-        Person p2 = new Person("Alice");
-        Person p3 = new Person("Bob", 30);
-
-        p1.displayInfo();  
-        p2.displayInfo();  
-        p3.displayInfo();  
+      
+        ConstructOver obj1 = new ConstructOver();               
+        ConstructOver obj2 = new ConstructOver("Alice");         
+        ConstructOver obj3 = new ConstructOver("Bob", 22);       
     }
 }
-
-        
